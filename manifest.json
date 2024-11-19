@@ -1,0 +1,22 @@
+{
+    "name": "X to Bluesky",
+    "short_name": "X2BSky",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "https://placehold.co/192x192/87ceeb/ffffff?text=X2Bsky",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "share_target": {
+      "action": "/share-handler",
+      "method": "POST",
+      "enctype": "multipart/form-data",
+      "params": {
+        "text": "text"
+      }
+    }
+  }
+  

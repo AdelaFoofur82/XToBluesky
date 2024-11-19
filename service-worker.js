@@ -42,7 +42,7 @@ async function handleShare(request) {
     const formData = await request.formData();
     const sharedText = formData.get('text'); // La URL del tweet estará en `text`
 
-    if (!sharedText || !sharedText.includes('twitter.com')) {
+    if (!sharedText || !sharedText.includes('x.com')) {
         return new Response(`
         <!DOCTYPE html>
         <html lang="en">
@@ -52,7 +52,7 @@ async function handleShare(request) {
         </head>
         <body>
           <h1>Error</h1>
-          <p>Por favor, comparte un enlace válido de Twitter.</p>
+          <p>Por favor, comparte un enlace válido de X.</p>
         </body>
         </html>
       `, {

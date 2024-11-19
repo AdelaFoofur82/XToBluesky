@@ -1,7 +1,7 @@
 {
-    "name": "X to Bluesky",
+    "name": "X To Bluesky",
     "short_name": "X2BSky",
-    "start_url": "/",
+    "start_url": "/XToBluesky",
     "display": "standalone",
     "icons": [
       {

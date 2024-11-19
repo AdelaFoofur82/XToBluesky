@@ -1,4 +1,5 @@
 async function fetchTweetTextFromHTML(tweetUrl) {
+    debugger;
     try {
       const response = await fetch(tweetUrl, { credentials: 'include' });
       if (!response.ok) {
@@ -29,6 +30,7 @@ async function fetchTweetTextFromHTML(tweetUrl) {
   }
   
   async function handleShare(request) {
+    debugger;
     const formData = await request.formData();
     const sharedText = formData.get('text'); // La URL del tweet estará en `text`
   
